@@ -1,0 +1,7 @@
+resourcePackages:
+- cloud.aibic_spiral.aibicmart.rest
+cacheTTL: 0
+openAPI:
+  info:
+    title: AiBiC Mart API List
+    description: 'PBL用店舗シミュレータのREST API 一覧'

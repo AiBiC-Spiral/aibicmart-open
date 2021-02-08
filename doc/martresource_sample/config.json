@@ -1,0 +1,25 @@
+{
+    "simulate_start" : "2015-01-01",
+    "simulate_end" : "2015-12-31",
+    "stock_limit" : 10000,
+    "product": [
+            {
+                    "JANCode"       : "04912345000002",
+                    "default_price" : 300,
+                    "cost"  : 100,
+                    "expire": 3
+            },
+            {
+                    "JANCode"       : "04912345000019",
+                    "default_price" : 120,
+                    "cost"  : 76,
+                    "expire": 3
+            },
+                            {
+                    "JANCode"       : "04912345000026",
+                    "default_price" : 168,
+                    "cost"  : 68,
+                    "expire": 3
+            }
+    ]
+}

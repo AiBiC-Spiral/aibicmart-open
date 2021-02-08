@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE project>  
+<Configuration status="off">
+
+    <Properties>
+        <Property name="format1">%d{yyyy/MM/dd HH:mm:ss.SSS} %-6p %m%n</Property>
+        <Property name="logfile">/var/log/aibicmart/aibicmart-open.log</Property>
+        <Property name="logfile-archive">/var/log/aibicmart/aibicmart-open_%d{yyyy-MM-dd}.log</Property>
+    </Properties>
+    
+	<Appenders>
+		<RollingFile name="logfile001" append="true" fileName="${logfile}"
+			filePattern="${logfile-archive}">
+			<PatternLayout>
+				<pattern>${format1}</pattern>
+			</PatternLayout>
+			<Policies>
+				<TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+			</Policies>
+		</RollingFile>
+	</Appenders>
+	
+	<Loggers>
+		<Root level="trace">
+			<AppenderRef ref="logfile001" />
+		</Root>
+	</Loggers>
+</Configuration>
